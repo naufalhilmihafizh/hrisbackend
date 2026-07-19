@@ -12,8 +12,8 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- App CSS -->
-    @vite(['resources/css/app.css', 'resources/js/app.js']) 
+    <!-- Tailwind CSS CDN (Trik Instan untuk CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="login-page">
     <div class="login-card">
