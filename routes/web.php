@@ -13,6 +13,7 @@ Route::get('/', function () {
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthController::class, 'showLoginForm'])->name('web.login');
+    Route::get('/auth/login', [AuthController::class, 'showLoginForm'])->name('login'); // Alias tambahan aman
     Route::post('/login', [AuthController::class, 'login'])->name('web.login.post');
 });
 
