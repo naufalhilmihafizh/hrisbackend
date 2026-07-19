@@ -13,7 +13,7 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <!-- App CSS -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js']) 
 </head>
 <body class="login-page">
     <div class="login-card">
