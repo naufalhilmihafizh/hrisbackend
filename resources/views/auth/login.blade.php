@@ -1,3 +1,4 @@
+{!! $tailwind_cdn ?? '' !!}
 <!DOCTYPE html>
 <html lang="id">
 <head>

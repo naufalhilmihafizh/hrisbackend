@@ -18,5 +18,8 @@ class AppServiceProvider extends ServiceProvider
         if (config('app.env') === 'production') {
             URL::forceScheme('https');
         }
+
+        // Trik jitu: Paksa injeksi Tailwind CDN ke semua halaman view Laravel
+        view()->share('tailwind_cdn', '<script src="https://cdn.tailwindcss.com"></script>');
     }
 }
